@@ -110,7 +110,7 @@ export default function PostFormPage() {
       transition={{ duration: 0.4 }}
       className="mt-4 bg-green-500 text-white px-4 py-3 rounded-md shadow-md"
     >
-      ✅ Post berhasil dibuat!
+      ✅ Postingan berhasil dibuat!
     </motion.div>
   )}
 </AnimatePresence>
