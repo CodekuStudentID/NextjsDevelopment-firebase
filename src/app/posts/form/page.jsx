@@ -100,7 +100,7 @@ export default function PostFormPage() {
           </form>
 
 
-          {/* animasi sukses */}
+{/* animasi sukses */}
 <AnimatePresence mode="wait">
   {success && (
     <motion.div
@@ -135,6 +135,7 @@ export default function PostFormPage() {
             </motion.div>
           ))}
         </div>
+        </motion.div>
       </div>
     </div>
   );
