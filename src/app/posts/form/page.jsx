@@ -100,19 +100,20 @@ export default function PostFormPage() {
           </form>
 
           {/* animasi sukses */}
-          <AnimatePresence>
-            {success && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                className="mt-4 bg-green-500 text-white px-4 py-3 rounded-md shadow-md"
-              >
-                ✅ Post berhasil dibuat!
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </motion.div>
+<AnimatePresence mode="wait">
+  {success && (
+    <motion.div
+      key="success-alert" // 🔑 penting untuk trigger re-render
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.4 }}
+      className="mt-4 bg-green-500 text-white px-4 py-3 rounded-md shadow-md"
+    >
+      ✅ Post berhasil dibuat!
+    </motion.div>
+  )}
+</AnimatePresence>
 
         {/* LIST POSTS */}
         <h2 className="text-xl font-semibold text-gray-800 mb-4">
