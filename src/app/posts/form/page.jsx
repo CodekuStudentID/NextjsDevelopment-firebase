@@ -99,7 +99,8 @@ export default function PostFormPage() {
             </button>
           </form>
 
-        {/* animasi sukses */}
+
+          {/* animasi sukses */}
 <AnimatePresence mode="wait">
   {success && (
     <motion.div
