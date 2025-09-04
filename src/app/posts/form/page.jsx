@@ -56,7 +56,7 @@ export default function PostFormPage() {
           className="bg-white shadow-md border border-gray-200 rounded-lg p-6 mb-10"
         >
           <h1 className="text-2xl font-bold text-gray-800 mb-6">
-            ✍️ Buat Post Baru
+            Buat Post Baru
           </h1>
 
           <form onSubmit={handleSubmit} className="space-y-4">
