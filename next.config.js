@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    optimizeCss: false, // matikan LightningCSS
+    optimizeCss: true, // matikan LightningCSS
   },
 };
 
