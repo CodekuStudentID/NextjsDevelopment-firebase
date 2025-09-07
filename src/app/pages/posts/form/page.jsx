@@ -51,7 +51,7 @@ export default function PostsPage() {
         {/* Form */}
         <div className="bg-white shadow-lg p-6 mb-10">
           <h2 className="text-xl font-semibold mb-4 text-gray-700">
-            {editingId ? "✏️ Edit Post" : "➕ Form to Add Post"}
+            {editingId ? "✏️ Edit Post" : "Form to Add Post"}
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
