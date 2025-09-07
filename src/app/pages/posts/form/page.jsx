@@ -45,13 +45,13 @@ export default function PostsPage() {
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
-          🚀 CRUD Posts
+  
         </h1>
 
         {/* Form */}
         <div className="bg-white shadow-lg p-6 mb-10">
           <h2 className="text-xl font-semibold mb-4 text-gray-700">
-            {editingId ? "✏️ Edit Post" : "➕ Add New Post"}
+            {editingId ? "✏️ Edit Post" : "➕ Form to Add Post"}
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
